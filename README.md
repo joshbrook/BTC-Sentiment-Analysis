@@ -28,7 +28,9 @@ We may also make use of the [UCC](https://github.com/conversationai/unhealthy-co
 Datasets  containing Ethereum based currency, Apple's stock  discussions and overall discussions on cryptocurrency. These datasets are relatively new and offer both comments and posts with their scores and for the comments, their sentiment analysis. 
 
 https://socialgrep.com/datasets/the-reddit-ethereum-dataset
+
 https://socialgrep.com/datasets/five-years-of-aapl-on-reddit
+
 https://socialgrep.com/datasets/reddit-cryptocurrency-data-for-august-2021
 
 
