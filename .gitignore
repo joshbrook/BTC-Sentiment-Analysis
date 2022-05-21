@@ -2,3 +2,5 @@ __pycache__
 .ipynb_checkpoints
 lem_tweets.csv
 sent-tweets.csv
+Btc_tweets.csv
+BIG_btc_tweets.csv
