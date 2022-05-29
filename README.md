@@ -19,9 +19,9 @@ We have created our own dataset of Bitcoin-related discourse by using the [Twitt
 
 We also considered using the following datasets but decided to narrow our focus to achieve better results.
 - [Ethereum](https://socialgrep.com/datasets/the-reddit-ethereum-dataset)
-- [Apple stock] (https://socialgrep.com/datasets/five-years-of-aapl-on-reddit)
-- [cryptocurrency](https://socialgrep.com/datasets/reddit-cryptocurrency-data-for-august-2021). 
-> These datasets are new and offer both comments and posts with their sentiment scores which will be useful for their sentiment analysis. 
+- [Apple Stock](https://socialgrep.com/datasets/five-years-of-aapl-on-reddit)
+- [Cryptocurrency](https://socialgrep.com/datasets/reddit-cryptocurrency-data-for-august-2021). 
+> These datasets are new and offer both comments and posts with their sentiment scores which may prove useful for their sentiment analysis. 
 
 
 ### Week one 
