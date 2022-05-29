@@ -1,34 +1,27 @@
-# Cryptocurrency prediction Based on Sentiment Analysis
---------------------------------------------------------
-
-
+# Bitcoin Price Prediction based on Sentiment Analysis of Relevant Tweets
+-------------------------------------------------------------------------
 
 ## Abstract
-For our project, we have chosen to use sentiment analysis on data related to cryptocurrencies and other financial derivatives to try to create a model that can predict how the financial instruments might change based on the sentiments of the public.
+This project employs sentiment analysis on tweets related to cryptocurrencies in order to create a model that can predict how valuations might change based on public sentiment. We decided to do this to see whether there is a correlation between the behaviour of cryptocurrencies and people's sentiments about them since they are based on intangible services and as such could be considered volatile based on the availability of these services. 
 
-We decided to do this to see whether there is a correlation between the behaviour of cryptocurrencies and people's sentiments about them since they are based on intangible services and as such could be considered volatile based on the availability of these services.
+We have taken a sentiment-tagged dataset of Bitcoin ($BTC) related tweets, and used that to train a machine learning model in order to sentiment-tag a curated dataset which we have pulled from the Twitter API. We then compare the change in sentiment per day to the change in price of BTC per day, in order to analyse the correlation. Finally, we attempt to determine whether the sentiment influences the price or vice versa.
 
-For this purpose, we have chosen datasets related to cryptocurrencies as well as a dataset that has Tweets that are related to Apple stock (Appl).
-We hope to be able to run through a full NLP pipeline and implement machine learning algorithms, particularly ones centred on Neural Networks to highlight their superior ability in handling large data sets.
 
 ## Research questions
-For our project, we have chosen to use sentiment analysis on data related to cryptocurrencies and other financial derivatives to try to create a model that can predict how the financial instruments might change based on the sentiments of the public. 
+Is the sentiment of online discourse about Bitcoin representative of the change of its market price? If there is a correlation, which one affects the other more?
+
 
 ## Datasets
-We will make use of the [UCC](https://github.com/conversationai/unhealthy-conversations) (The Unhealthy Comments Corpus), which contains > 40,000 online comments which have been tagged with sentiment values to train our prediction model.
+We will make use of the following [Bitcoin Sentiments](https://www.kaggle.com/code/alexandrayuliu/bitcoin-tweets-sentiment-analysis/data?select=Bitcoin_tweets.csv) Dataset, containing 1.5 million sentiment tagged tweets related to Bitcoin.
 - This will be useful for creating our sentiment analysis models as it has labelled data that can be used to train a model which we can later apply to unlabelled data in order to improve our model.
-We will also make use of the following [Bitcoin Sentiments] (https://www.kaggle.com/code/alexandrayuliu/bitcoin-tweets-sentiment-analysis/data?select=Bitcoin_tweets.csv) Dataset that also features sentiment tagged Tweets related to Bitcoin tags.
+
+We have created our own dataset of Bitcoin-related discourse by using the [Twitter API](https://developer.twitter.com/en/docs/twitter-api) to pull relevant tweets from the week of the 17th to 23rd of May, which can be seen in a compressed csv file [here](data/Btc_tweets_17_23.zip).
 
 We also considered using the following datasets but decided to narrow our focus to achieve better results.
 - [Ethereum](https://socialgrep.com/datasets/the-reddit-ethereum-dataset)
 - [Apple stock] (https://socialgrep.com/datasets/five-years-of-aapl-on-reddit)
 - [cryptocurrency](https://socialgrep.com/datasets/reddit-cryptocurrency-data-for-august-2021). 
 > These datasets are new and offer both comments and posts with their sentiment scores which will be useful for their sentiment analysis. 
-
-## A tentative list of milestones for the project
---------------------------------------------------
-
-
 
 
 ### Week one 
@@ -52,10 +45,10 @@ We also considered using the following datasets but decided to narrow our focus 
 
 **Modelling Data**
 - After we pre-processed and collected all the data necessary for our analysis, we now build some models in order to predict sentiments. The Models are trained and evaluated on the Aforementioned datasets. 
--To check whether there is any correlation between price and sentiment, we apply our model to unlabelled Web Scrapped raw data from the past week. 
+-To check whether there is any correlation between price and sentiment, we apply our model to unlabelled Web Scraped raw data from the past week. 
+
 
 ## Roles and Divisions
-
 
 ### Philip
 --------
