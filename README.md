@@ -63,13 +63,15 @@ We also considered using the following datasets but decided to narrow our focus 
 - Pre-processing 
 - Applying machine learning methods to make predictions
 - Creating word vector spaces if needed
-- Word frequency distributions
+- Performing correlation Analysis
 
 ### Iacob
 --------
 - Finding Bitcoin Price Data
-- Performing correlation Analysis
-- Final Report
+- Choosing suitable datasets
+- Analysing the importance of the age of the data 
+- Pre-processing, especially cleaning the data
+- Word frequency and its visualization
 
 --------
 
