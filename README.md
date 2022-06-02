@@ -1,10 +1,10 @@
-# Bitcoin Price Prediction based on Sentiment Analysis of Relevant Tweets
+# Bitcoin Price Analysis based on Sentiment Analysis of Relevant Tweets
 -------------------------------------------------------------------------
 
 ## Abstract
-This project employs sentiment analysis on tweets related to cryptocurrencies in order to create a model that can predict how valuations might change based on public sentiment. We decided to do this to see whether there is a correlation between the behaviour of cryptocurrencies and people's sentiments about them since they are based on intangible services and as such could be considered volatile based on the availability of these services. 
+This project employs sentiment analysis on tweets related to cryptocurrencies in order to create a model that can tag raw data with sentiments and analyse the relationship between Price and Sentiment. We decided to do this to see whether there is a correlation between the behaviour of cryptocurrencies and people's sentiments about them since they are based on intangible services and as such could be considered volatile based on the availability of these services. 
 
-We have taken a sentiment-tagged dataset of Bitcoin ($BTC) related tweets, and used that to train a machine learning model in order to sentiment-tag a curated dataset which we have pulled from the Twitter API. We then compare the change in sentiment per day to the change in price of BTC per day, in order to analyse the correlation. Finally, we attempt to determine whether the sentiment influences the price or vice versa.
+We have taken a sentiment-tagged dataset of Bitcoin (BTC) related tweets, and used that to train a machine learning model in order to sentiment-tag a curated dataset which we have pulled from the Twitter API. We then compare the change in sentiment per day to the change in price of BTC per day, in order to analyse the correlation. Finally, we attempt to determine whether the sentiment influences the price or vice versa.
 
 
 ## Research questions
@@ -57,6 +57,7 @@ We also considered using the following datasets but decided to narrow our focus 
 - Pre-processing 
 - Web crawling
 - Data Visualization
+- BERT Modelling
 
 ### Josh
 ------
