@@ -1,83 +1,56 @@
-# Bitcoin Price Analysis based on Sentiment Analysis of Relevant Tweets
+# Bitcoin Price Fluxuation Analysis based on Sentiment Analysis of Related Tweets
+##### A collaboration for Text Mining by Josh Brook, Philip Ngare, and Iacob Postavaru
 -------------------------------------------------------------------------
 
 ## Abstract
-This project employs sentiment analysis on tweets related to cryptocurrencies in order to create a model that can tag raw data with sentiments and analyse the relationship between Price and Sentiment. We decided to do this to see whether there is a correlation between the behaviour of cryptocurrencies and people's sentiments about them since they are based on intangible services and as such could be considered volatile based on the availability of these services. 
+This project implements sentiment analysis techniques on large datasets of tweets related to Bitcoin (BTC) in order to create a model that can tag raw data with sentiments and analyse the relationship between Price and Sentiment. We aim to study correlation between the price fluxuation of cryptocurrencies and people's sentiments about them, since they are based on intangible services and as such could be considered volatile based on the availability of these services. 
 
-We have taken a sentiment-tagged dataset of Bitcoin (BTC) related tweets, and used that to train a machine learning model in order to sentiment-tag a curated dataset which we have pulled from the Twitter API. We then compare the change in sentiment per day to the change in price of BTC per day, in order to analyse the correlation. Finally, we attempt to determine whether the sentiment influences the price or vice versa.
-
-
-## Research questions
-Is the sentiment of online discourse about Bitcoin representative of the change of its market price? If there is a correlation, which one affects the other more?
+We have taken a sentiment-tagged dataset of BTC-related tweets, and used that to train a machine learning model in order to automatically sentiment-tag a curated dataset which we have scraped from the Twitter API. We then compare the change in sentiment per day to the change in price of BTC per day, and employ correlation analysis in order to determine whether online sentiment influences BTC price or vice versa.
 
 
-## Datasets
-We will make use of the following [Bitcoin Sentiments](https://www.kaggle.com/code/alexandrayuliu/bitcoin-tweets-sentiment-analysis/data?select=Bitcoin_tweets.csv) Dataset, containing 1.5 million sentiment tagged tweets related to Bitcoin.
+### Keywords 
+Bitcoin, sentiment analysis, machine learning, natural language processing
+
+
+## Research Question
+Is the sentiment of online discourse about Bitcoin representative of the change in its market price? 
+
+If there is a correlation, is there causation in either direction?
+
+
+## Data
+We make use of the following [Bitcoin Sentiments](https://www.kaggle.com/code/alexandrayuliu/bitcoin-tweets-sentiment-analysis/data?select=Bitcoin_tweets.csv) Dataset, containing 1.5 million sentiment tagged tweets related to Bitcoin.
 - This will be useful for creating our sentiment analysis models as it has labelled data that can be used to train a model which we can later apply to unlabelled data in order to improve our model.
 
-We have created our own dataset of Bitcoin-related discourse by using the [Twitter API](https://developer.twitter.com/en/docs/twitter-api) to pull relevant tweets from the week of the 17th to 23rd of May, which can be seen in a compressed csv file [here](data/Btc_tweets_17_23.zip).
+We have created our own dataset of Bitcoin-related discourse by using the [Twitter API](https://developer.twitter.com/en/docs/twitter-api) to pull relevant tweets from the week of the 17th to 23rd of May, which can be seen in a compressed csv file [here](data/Btc_tweets_17_23.zip). We also gained access to a researcher version of the API, which allowed us to scrape tweets from further back in time, but was unfortunately quite limited in volume. 
 
 We also considered using the following datasets but decided to narrow our focus to achieve better results.
 - [Ethereum](https://socialgrep.com/datasets/the-reddit-ethereum-dataset)
 - [Apple Stock](https://socialgrep.com/datasets/five-years-of-aapl-on-reddit)
-- [Cryptocurrency](https://socialgrep.com/datasets/reddit-cryptocurrency-data-for-august-2021). 
-> These datasets are new and offer both comments and posts with their sentiment scores which may prove useful for their sentiment analysis. 
+- [Cryptocurrency](https://socialgrep.com/datasets/reddit-cryptocurrency-data-for-august-2021)
+> These datasets are new and offer both comments and posts with their sentiment scores which may prove useful for improving our sentiment analysis algorithm. 
 
 
-### Week one 
-----------
+## Overview of steps taken
 
-- **Data selection**
-  - Since we opted to use labelled and unlabelled datasets, we first had to find a sizeable raw dataset which we could use to further train our sentiment analysis model as well as a prediction model.
-  -  For this, we found the Twitter [Bitcoin Sentiments](https://www.kaggle.com/code/alexandrayuliu/bitcoin-tweets-sentiment-analysis/data?select=Bitcoin_tweets.csv).
-
-  
-- **Pre-processing**
-  - For the pre-processing, we expected to be able to display a sample of the data in order to confirm that we were able to access the raw data from twitter's Apis’ correctly.
-  - This data will not include the following as they were deemed unnecessary for our analysis:
-    - URLs
-    - Twitter-specific URLs
-    - Emojis
-    - Emoticons.
-
-### Week two
-------------
-
-**Modelling Data**
-- After we pre-processed and collected all the data necessary for our analysis, we now build some models in order to predict sentiments. The Models are trained and evaluated on the Aforementioned datasets. 
--To check whether there is any correlation between price and sentiment, we apply our model to unlabelled Web Scraped raw data from the past week. 
+- Choosing suitable datasets for training, testing, and prediction
+- Pre-processing of tweet data
+- Web crawling for Twitter data
+- Data visualization
+- Applying machine learning methods to sentiment-tag tweets
+- Creating word vector spaces
+- Performing correlation analysis
+- Finding BTC price data
+- Analysing importance of the age of the data 
+- Word frequency and visualization
 
 
-## Roles and Divisions
+## Further Reading
+Feel free to look through our code in the various Jupyter Notebooks, starting with [Preprocessing](preprocessing.ipynb).
 
-### Philip
---------
+See our [final report](report.pdf) for our in-depth discussion and analysis of results.
 
-- Picking datasets for training testing and prediction
-- Pre-processing 
-- Web crawling
-- Data Visualization
-- BERT Modelling
 
-### Josh
-------
-- Pre-processing 
-- Applying machine learning methods to make predictions
-- Creating word vector spaces if needed
-- Performing correlation Analysis
-
-### Iacob
---------
-- Finding Bitcoin Price Data
-- Choosing suitable datasets
-- Analysing the importance of the age of the data 
-- Pre-processing, especially cleaning the data
-- Word frequency and its visualization
-
---------
-
-## Documentation
-***This can be added as the project unfolds. You should describe, in particular, what your repo contains and how to reproduce your results.***
 
 
 
