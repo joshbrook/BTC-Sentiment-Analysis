@@ -1,4 +1,4 @@
-# Bitcoin Price Fluxuation Analysis based on Sentiment Analysis of Related Tweets
+# Predicting Bitcoin Price Fluctuation through Automated Sentiment Analysis of Related Tweets
 ##### A collaboration for Text Mining by Josh Brook, Philip Ngare, and Iacob Postavaru
 -------------------------------------------------------------------------
 
@@ -49,8 +49,3 @@ We also considered using the following datasets but decided to narrow our focus 
 Feel free to look through our code in the various Jupyter Notebooks, starting with [Preprocessing](preprocessing.ipynb).
 
 See our [final report](report.pdf) for our in-depth discussion and analysis of results.
-
-
-
-
-
